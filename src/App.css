@@ -1,0 +1,59 @@
+.app {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: #0079bf;
+}
+
+.button{
+    border: none;
+    border-radius: 5px;
+	font-size: 20px;
+	line-height: 20px;
+    margin-top: 15px;
+	width: 100px;
+	height: 50px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.submit{
+	background: #0079bf;
+	color: #fff;
+}
+
+.form {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+}
+
+.input, .textarea, .select{
+    height: 50px;
+    background: #fff;
+    color: #000;
+	border: none;
+	border-radius: 5px;
+	margin-top: 15px;
+	outline: none;
+	font-size: 20px;
+	line-height: 20px;
+	font-family: "Roboto", sans-serif;
+  	font-weight: normal;
+	  padding-left: 5px;
+}
+
+.separateButton{
+	width: 150px;
+}
+
+.userMenuArrow{
+	width: 15px;
+	height: 10px;
+	transition: transform 0.5s;
+	margin-top: 10px;
+ }
+ 
+ .userMenuArrowClicked{
+	 transform: rotate(180deg);
+ }

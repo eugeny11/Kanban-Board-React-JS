@@ -1,0 +1,6 @@
+.main {
+    margin: 0 auto;
+	background: #0079bf;
+	display: flex;
+	flex-grow: 1;
+}

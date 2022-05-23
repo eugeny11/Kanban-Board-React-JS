@@ -1,0 +1,35 @@
+.list{
+    background-color: #ebecf0;
+	width: 280px;
+    height: fit-content;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+.listTitle{
+	font-size: 20px;
+	line-height: 20px;
+	color: #000000;
+	margin: 0 auto;
+}
+
+.goalLink{
+	text-decoration: none;
+}
+
+.goal{
+	background: #fff;
+	color: #000;
+	border-radius: 5px;
+	margin-top: 15px;
+	padding: 8px 8px;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+@media screen and (max-width: 480px){
+	.list{
+		margin: 0 auto 20px;
+	}
+}

@@ -1,0 +1,58 @@
+.goalHeader{
+    display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+
+.goalTitle{
+    margin: 0;
+    color: #000;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.goalDesc{
+	width: 100%;
+	padding-left: 10px;
+	padding-top: 10px;
+	font-size: 20px;
+	line-height: 20px;
+	border-radius: 5px;
+	margin-top: 15px;
+	outline: none;
+	height: 15vh;
+    resize: none;
+    color: #000;
+    background: #fff;
+}
+
+.goalForm{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.emptyState{
+	width: 200px;
+}
+
+.pageClose{
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.wrapper{
+	border-radius: 5px;
+	padding: 25px;
+	width: 85vw;
+	max-width: 1200px;
+	margin: 20px 20px;
+}
+
+@media screen and (max-width: 480px){
+	.wrapper{
+		width: 75wv;
+	}
+}

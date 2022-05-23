@@ -1,0 +1,25 @@
+.header{
+    background-color: #0485cf;
+}
+
+.headerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding-right:100px;
+}
+
+.headerTitle {
+    margin: auto auto auto 15px;
+    font-size: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media screen and (max-width: 480px){
+   .header{
+       justify-content: flex-end;
+   }
+}
