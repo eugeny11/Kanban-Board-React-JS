@@ -17,6 +17,20 @@
 	text-align: center;
 }
 
+.add-goal-button:hover{
+	background: #fff;
+	cursor: pointer;
+}
+
+.separateButton:hover{
+	background: #fff;
+}
+
+.add-goal-button:disabled{
+	background-color: #ebecf0;
+	cursor: default;
+}
+
 .submit{
 	background: #0079bf;
 	color: #fff;

@@ -3,57 +3,64 @@ import X from "./x.png";
 import { Link, useParams } from "react-router-dom";
 import css from "./GoalSeparatePage.module.css";
 
-const GoalSeparatePage = props => {
+const GoalSeparatePage = (props) => {
   const { goals, setGoals } = props;
   const { goalId } = useParams();
-  const [newDesc, setNewDesc] = useState('');
+  const [newDesc, setNewDesc] = useState("");
   const goal = goals.find((goal) => goal.id === goalId);
 
   const onSubmit = (e) => {
-      e.preventDefault()
+    e.preventDefault();
 
-      if (!newDesc){
-        alert('Enter new desc!')
+    if (!newDesc) {
+      alert("Enter new desc!");
+    }
+
+    const updatedGoals = goals.map((goal) => {
+      if (goal.id === goalId) {
+        return { ...goal, desc: newDesc };
       }
+      return goal;
+    });
+    setGoals(updatedGoals);
 
-      const updatedGoals = goals.map(goal => {
-        if (goal.id === goalId){
-            return {...goal, desc: newDesc}
-        } return goal
-    })
-      setGoals(updatedGoals)
-
-      setNewDesc('')
-  }
+    setNewDesc("");
+  };
 
   const newDescChange = (e) => {
-    setNewDesc(e.target.value)
-  }
-
- 
+    setNewDesc(e.target.value);
+  };
 
   const renderGoalSeparatePage = () => {
     return (
       <>
         <form className={css.goalForm} onSubmit={onSubmit}>
-            <div className={css.goalHeader}>
+          <div className={css.goalHeader}>
             <h2 className={css.goalTitle}>{goal.title}</h2>
-            </div>
+          </div>
+          {goal.desc ? (
             <p className={css.goalDesc}>{goal.desc}</p>
-            <input
-            className='input'
+          ) : (
+            <p className={css.goalDesc}>Goal got no desc, please add desc</p>
+          )}
+          <input
+            className="input"
             name="description"
             value={newDesc}
             onChange={newDescChange}
             type="text"
             placeholder="Change description"
-            />
-            <Link to="/">
+          />
+          <Link to="/">
             <img className={css.pageClose} src={X} alt="" />
-            </Link>
-            <button type="submit" value="Submit" className="button separateButton">
+          </Link>
+          <button
+            type="submit"
+            value="Submit"
+            className="button separateButton"
+          >
             Submit changes
-            </button>
+          </button>
         </form>
       </>
     );
@@ -71,13 +78,12 @@ const GoalSeparatePage = props => {
 
   return (
     <>
-      
       <div className={css.wrapper}>
         {goal ? renderGoalSeparatePage() : renderEmptyState()}
       </div>
       <Link to="/">
-            <img className={css.pageClose} src={X} alt="" />
-       </Link>
+        <img className={css.pageClose} src={X} alt="" />
+      </Link>
     </>
   );
 };
