@@ -56,7 +56,7 @@ const AddGoalsToBacklog = (props) => {
 
   return (
     <>
-      <button className="button" onClick={handleAddNewClick}>
+      <button className="button add-goal-button" onClick={handleAddNewClick}>
         Add goal
       </button>
     </>
