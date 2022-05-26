@@ -66,8 +66,10 @@
 	height: 10px;
 	transition: transform 0.5s;
 	margin-top: 10px;
+	cursor: pointer;
  }
  
  .userMenuArrowClicked{
 	 transform: rotate(180deg);
+	 cursor: pointer;
  }
