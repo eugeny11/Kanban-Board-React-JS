@@ -2,9 +2,22 @@
 
 A Kanban board is a popular tool for visualizing and breaking down a task into stages.
 
-## Applied skills and technologies, description of the application structure
+## The initial state
 
-The application has four blocks with tasks, with the ability to move tasks between blocks using a special interface.
-Implemented the ability to change the description and name of tasks with saving in localStorage, with the ability to work with them after restarting the application.
-At the same time, a detailed description of the task is located on a separate page with a unique id.
-The application has been laid out in accordance with the attached layout.
+The original Kanban board should have 4 blocks with tasks:
+
+Backlog (tasks that require clarification before taking them to work);
+Ready (tasks that can be taken into work);
+In progress (tasks that are already in progress);
+Finished (completed tasks).
+
+### The following functionality has been implemented:
+
+1. Adding a new task
+Initially, each task is always placed in the backlog - for analysis. When you click on the "+ Add card" button in the Backlog card, an input field should appear at the end of the list, between the last task and the button. In this case, the “+ Add card” button should change to “Submit”.
+
+Algorithm for adding a task:
+
+We pressed the “+ Add card” button → an edit field appeared → entered the name → clicked the “Submit” button - the task appeared in the backlog (provided that the name was entered).
+
+You cannot add a task with a missing name to the list. If the field with the name is empty when clicking "Submit", nothing is added to the list.
