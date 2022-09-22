@@ -1,6 +1,6 @@
 ## Kanban Board
 
-Kanban board with task sorting.
+A Kanban board is a popular tool for visualizing and breaking down a task into stages.
 
 ## Applied skills and technologies, description of the application structure
 
