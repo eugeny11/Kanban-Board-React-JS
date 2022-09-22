@@ -1,4 +1,4 @@
-#Kanban Board
+## Kanban Board
 
 Kanban board with task sorting.
 
