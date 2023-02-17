@@ -11,6 +11,8 @@ Ready (tasks that can be taken into work);
 In progress (tasks that are already in progress);
 Finished (completed tasks).
 
+![Tasks](https://eugeny11/Kanban-Board-React-JS/blob/main/images/fr_kanban_1_2.png)
+
 ### How to run
 
 You need installed node.js and npm packet on your PC or yarn, if you use Macbook. You have to create a React app in your folder, and then in your coder terminal, make command npm start
