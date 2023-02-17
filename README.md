@@ -11,7 +11,7 @@ Ready (tasks that can be taken into work);
 In progress (tasks that are already in progress);
 Finished (completed tasks).
 
-![Tasks](https://eugeny11/Kanban-Board-React-JS/blob/main/images/fr_kanban_1_2.png)
+![Tasks](https://github.com/eugeny11/Kanban-Board-React-JS/blob/main/images/fr_kanban_1_2.png)
 
 ### How to run
 
