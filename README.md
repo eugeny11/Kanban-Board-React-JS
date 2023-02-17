@@ -22,6 +22,8 @@ You need installed node.js and npm packet on your PC or yarn, if you use Macbook
 1. Adding a new task
 Initially, each task is always placed in the backlog - for analysis. When you click on the "+ Add card" button in the Backlog card, an input field should appear at the end of the list, between the last task and the button. In this case, the “+ Add card” button should change to “Submit”.
 
+![Submit](https://github.com/eugeny11/Kanban-Board-React-JS/blob/main/images/fr_kanban_1.png)
+
 Algorithm for adding a task:
 
 We pressed the “+ Add card” button → an edit field appeared → entered the name → clicked the “Submit” button - the task appeared in the backlog (provided that the name was entered).
@@ -32,6 +34,8 @@ You cannot add a task with a missing name to the list. If the field with the nam
 The tasks for the Ready list are taken from the Backlog. When you click on "+ Add card" in the Ready card, a dropdown with tasks from the Backlog list appears at the end of the list. After clicking on a dropdown task, it should appear last in the Ready list, and this task should be removed from the Backlog.
 
 If the Backlog is empty (there are no tasks in the list), then the “+ Add card” button in the Ready list should be inactive, that is, nothing happens when you click on it. An inactive button needs to be assigned the disabled attribute. Active and inactive buttons should differ visually: for example, in color and absence of cursor: pointer.
+
+![Move](https://github.com/eugeny11/Kanban-Board-React-JS/blob/main/images/fr_kanban_2.png)
 
 The rest of the lists (In progress and Finished) work on the same principle. The tasks for the In progress list are taken from Ready, and the tasks for the Finished list are taken from In progress.
 
@@ -52,20 +56,28 @@ The description field must be editable. Implementation details of this function 
 
 When you click on the cross in the upper right corner, you go back to the main page.
 
+![Detailed task page](https://github.com/eugeny11/Kanban-Board-React-JS/blob/main/images/fr_kanban_3.png)
+
 5. Displaying the number of tasks in the footer
 The footer should display the number of active and completed tasks.
 
 Active tasks - displays the number of tasks in the Backlog list.
 Finished tasks - displays the number of tasks in the Finished list.
 
+![Detailed task page](https://github.com/eugeny11/Kanban-Board-React-JS/blob/main/images/fr_kanban_4.png)
+
 6. User drop down menu
 Implement a drop-down list that will appear when you click on a block in the upper right corner of the page - a user avatar with an arrow.
 img
 The arrow next to the avatar should point up when the menu is open and down when the menu is closed.
 
+![Log out](https://github.com/eugeny11/Kanban-Board-React-JS/blob/main/images/fr_kanban_5.png)
+
 When clicking on the menu items, nothing happens, but you need to add a selection of items on hover (for example, change the color of the text or add an underline).
 
 ## Requirements for React
+
+![Kanban Figma template](https://github.com/eugeny11/Kanban-Board-React-JS/blob/main/images/kanban_figma_maket.jpg)
 
 The interface must be divided into components. Before you start, think carefully about which components you will use. The division into components should be logical and justified.
 
