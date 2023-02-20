@@ -2,6 +2,12 @@
 
 A Kanban board is a popular tool for visualizing and breaking down a task into stages.
 
+## How to run and clone react app
+
+Open your terminal and then type. $ git clone {the url to the GitHub repo} This clones the repo.
+cd into the new folder and type. $ npm install. This installs the required dependencies.
+To run the React project. $ npm start.
+
 ## The initial state
 
 The original Kanban board should have 4 blocks with tasks:
